@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Mr TengJiao</title>
+    <link>https://daleicjr.github.io/categories/hugo/</link>
+    <description>Recent content in hugo on Mr TengJiao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 22 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://daleicjr.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo博客搭建</title>
+      <link>https://daleicjr.github.io/2017/05/22/</link>
+      <pubDate>Mon, 22 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/2017/05/22/</guid>
+      <description>Hugo博客搭建 hugo号称是全球最快的网站构建框架 非常适合刚入门的同学拿来写自己的博客
+用来记录自己的学习过程
+Hugo博客搭建过程 此处全部是以在windows系统中操作为例
+但不管是什么系统，大概的操作都一样的
+1.安装Hugo
+2.生成站点
+3.创建文章
+4.安装主题
+5.运行hugo
+安装Hugo 需要访问github下载
+点击下载访问下载链接
+如图所示 下载相应系统版本的hugo 生成站点 根据上边提示 你应该已经下载好了hugo的版本 使用代码:
+希望生成到 /path/to/site 路径:
+hugo new site /path/to/site  这样就在 /path/to/site 目录里生成了初始站点，进去目录:
+cd /path/to/site  此处生成目录后的结构应该为：
+创建文章 创建一个名称为about的页面：
+hugo new about.md  此处推荐使用sublime进行编写 方便快捷精简 此处在content文件夹中生成一个md格式的文档，文档内容采用markdown格式编写
+编写如下内容
+创建你的第一篇文章，放到post目录，方便之后生成聚合页面
+hugo new post/first.md  打开编辑post/first.md
+运行hugo 此处可以先不用安装主题 观察生成效果
+转到根目录执行hugo命令进行调试
+hugo server --theme=hyde --buildDrafts  如果不出什么意外 应该会出现如下图所示内容
+打开浏览器 输入 http://localhost:1313/ 就会生成一个hugo的初始页面 之前写的.md中的内容也会出现在页面中
+安装主题 我们把安装主题的步骤放在最后的原因是你可以通过网上的一些有关于hugo的文章自己来进行hugo主题的编写</description>
+    </item>
+    
+  </channel>
+</rss>

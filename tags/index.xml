@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mr TengJiao</title>
+    <link>https://daleicjr.github.io/tags/</link>
+    <description>Recent content in Tags on Mr TengJiao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 22 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://daleicjr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hugo</title>
+      <link>https://daleicjr.github.io/tags/hugo/</link>
+      <pubDate>Mon, 22 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vm</title>
+      <link>https://daleicjr.github.io/tags/vm/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/vm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>win10</title>
+      <link>https://daleicjr.github.io/tags/win10/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/win10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://daleicjr.github.io/tags/github/</link>
+      <pubDate>Fri, 19 May 2017 21:49:20 +0200</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

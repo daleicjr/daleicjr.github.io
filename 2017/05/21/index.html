@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>Vm配置虚拟机 &middot; Mr TengJiao</title>
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Dl wang">
+    
+      <meta name="description" content="藤椒先生">
+    
+    
+    <link rel="canonical" href="https://daleicjr.github.io/2017/05/21/"/>
+    <link rel="icon" href="https://daleicjr.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="https://daleicjr.github.io/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://daleicjr.github.io/css/style.css">
+    <link rel="stylesheet" href="https://daleicjr.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://daleicjr.github.io/css/monokai.css">
+    <link rel="stylesheet" href="https://daleicjr.github.io/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Vm配置虚拟机" />
+<meta property="og:description" content="vm下配置Ubuntu 1.在Ubuntu官网下载镜像文件 下载后不用打开 https://www.ubuntu.com/download/desktop 2.电脑内准备好vmware软件
+ 第一步 新建虚拟机 点击下一步：  第二步 在这里导入你下载的Ubuntu镜像文件  第三步 填入名称和密码 一定要记住密码 配置好之后要用密码登陆  第四步
+  浏览 选择你要存放的文件夹  第五步 选择你要配置磁盘的大小  第六步 点击完成 之后会打开  之后就会打开Ubuntu系统了
+需要下载VMwaretool来修改分辨率
+在终端输入 xrandr -s 1920x1440" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daleicjr.github.io/2017/05/21/" />
+<meta property="article:published_time" content="2017-05-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-05-21T00:00:00+00:00" />
+
+    
+    <meta itemprop="name" content="Vm配置虚拟机">
+<meta itemprop="description" content="vm下配置Ubuntu 1.在Ubuntu官网下载镜像文件 下载后不用打开 https://www.ubuntu.com/download/desktop 2.电脑内准备好vmware软件
+ 第一步 新建虚拟机 点击下一步：  第二步 在这里导入你下载的Ubuntu镜像文件  第三步 填入名称和密码 一定要记住密码 配置好之后要用密码登陆  第四步
+  浏览 选择你要存放的文件夹  第五步 选择你要配置磁盘的大小  第六步 点击完成 之后会打开  之后就会打开Ubuntu系统了
+需要下载VMwaretool来修改分辨率
+在终端输入 xrandr -s 1920x1440">
+
+
+<meta itemprop="datePublished" content="2017-05-21T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-05-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="28">
+
+
+
+<meta itemprop="keywords" content="Vm," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vm配置虚拟机"/>
+<meta name="twitter:description" content="vm下配置Ubuntu 1.在Ubuntu官网下载镜像文件 下载后不用打开 https://www.ubuntu.com/download/desktop 2.电脑内准备好vmware软件
+ 第一步 新建虚拟机 点击下一步：  第二步 在这里导入你下载的Ubuntu镜像文件  第三步 填入名称和密码 一定要记住密码 配置好之后要用密码登陆  第四步
+  浏览 选择你要存放的文件夹  第五步 选择你要配置磁盘的大小  第六步 点击完成 之后会打开  之后就会打开Ubuntu系统了
+需要下载VMwaretool来修改分辨率
+在终端输入 xrandr -s 1920x1440"/>
+<meta name="twitter:site" content="@spf13"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://daleicjr.github.io" id="logo">
+          
+          <span class="site-title">Mr TengJiao</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://daleicjr.github.io/">首页</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://daleicjr.github.io/tags/">标签</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://daleicjr.github.io/categories/">文献资料</a>
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/">关于我</a>
+          
+
+          
+          
+          
+          
+          
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://daleicjr.github.io/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://daleicjr.github.io" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://daleicjr.github.io/">首页</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://daleicjr.github.io/tags/">标签</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://daleicjr.github.io/categories/">文献资料</a></td>
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/">关于我</a></td>
+          
+
+          
+          
+          
+          
+          
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://daleicjr.github.io" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://www.gravatar.com/avatar/5f012eca59152ed7af0d683d7894e490?s=100&d=identicon"/>
+      
+      <h2 id="name">Dl wang</h2>
+      <h3 id="title">Blogger - Programmer - Weber</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Henan province</span>
+      
+          <a id="follow" href="https://github.com/daleicjr">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        4
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          4
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/daleicjr" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/spf13" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://daleicjr.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="https://daleicjr.github.io/2017/05/21/">
+    <h1 class="article-title" itemprop="name">
+        Vm配置虚拟机
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-05-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-05-21</time>
+            &middot;
+            28
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://daleicjr.github.io/categories/win10">win10</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://daleicjr.github.io/tags/vm">Vm</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p><strong>vm下配置Ubuntu</strong>
+1.在Ubuntu官网下载镜像文件  下载后不用打开  <a href="https://www.ubuntu.com/download/desktop">https://www.ubuntu.com/download/desktop</a>
+2.电脑内准备好vmware软件</p>
+
+<ul>
+<li>第一步
+新建虚拟机  点击下一步：
+<img src="https://img-blog.csdn.net/20180920200508315?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMTQwOTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="" /></li>
+<li>第二步
+在这里导入你下载的Ubuntu镜像文件
+<img src="https://img-blog.csdn.net/20180920200624442?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMTQwOTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述" /></li>
+
+<li><p>第三步
+填入名称和密码  一定要记住密码  配置好之后要用密码登陆
+<img src="https://img-blog.csdn.net/201809202007256?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMTQwOTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述" /></p></li>
+
+<li><p>第四步</p></li>
+</ul>
+
+<p>浏览  选择你要存放的文件夹
+<img src="https://img-blog.csdn.net/20180920200941484?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMTQwOTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述" /></p>
+
+<ul>
+<li>第五步
+选择你要配置磁盘的大小
+<img src="https://img-blog.csdn.net/20180920201215810?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMTQwOTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述" /></li>
+<li>第六步
+点击完成  之后会打开<img src="https://img-blog.csdn.net/20180920201306771?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMTQwOTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述" /></li>
+</ul>
+
+<p><img src="https://img-blog.csdn.net/20180920201321760?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMTQwOTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述" /></p>
+
+<p>之后就会打开Ubuntu系统了</p>
+
+<p>需要下载VMwaretool来修改分辨率</p>
+
+<p>在终端输入
+xrandr -s 1920x1440</p>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://daleicjr.github.io/2017/05/21/" data-id="3db18778302b5b5f22dc11855ed5642b" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://daleicjr.github.io/2017/05/20/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">win10任务栏假死状态处理方法</div>
+    </a>
+    
+
+    
+    <a href="https://daleicjr.github.io/2017/05/22/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Hugo博客搭建</div>
+    </a>
+    
+</nav>
+
+
+</article>
+
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://daleicjr.github.io/2017/05/22/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://daleicjr.github.io/categories/hugo">
+                        hugo
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://daleicjr.github.io/2017/05/22/" class="title">Hugo博客搭建</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-05-22</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://daleicjr.github.io/2017/05/21/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://daleicjr.github.io/categories/win10">
+                        win10
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://daleicjr.github.io/2017/05/21/" class="title">Vm配置虚拟机</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-05-21</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://daleicjr.github.io/2017/05/20/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://daleicjr.github.io/categories/win10">
+                        win10
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://daleicjr.github.io/2017/05/20/" class="title">win10任务栏假死状态处理方法</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-05-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://daleicjr.github.io/2017/05/19/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://daleicjr.github.io/categories/github">
+                        github
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://daleicjr.github.io/2017/05/19/" class="title">github&#43;域名</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-19 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-19</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://daleicjr.github.io/categories/github">
+                    github
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://daleicjr.github.io/categories/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://daleicjr.github.io/categories/win10">
+                    win10
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://daleicjr.github.io/tags/github">
+                    github
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://daleicjr.github.io/tags/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://daleicjr.github.io/tags/vm">
+                    vm
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://daleicjr.github.io/tags/win10">
+                    win10
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://daleicjr.github.io/tags/github" style="font-size: 12px;">github</a>
+        
+        
+        <a href="https://daleicjr.github.io/tags/hugo" style="font-size: 12px;">hugo</a>
+        
+        
+        <a href="https://daleicjr.github.io/tags/vm" style="font-size: 12px;">vm</a>
+        
+        
+        <a href="https://daleicjr.github.io/tags/win10" style="font-size: 12px;">win10</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Powered by <a href="//gohugo.io">Hugo</a> &amp;Written by <a href="//https://github.com/daleicjr">Dl</a><br> 🦈🦈🦈
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://daleicjr.github.io/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://daleicjr.github.io/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>

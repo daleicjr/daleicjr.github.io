@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Mr TengJiao</title>
+    <link>https://daleicjr.github.io/categories/github/</link>
+    <description>Recent content in github on Mr TengJiao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 19 May 2017 21:49:20 +0200</lastBuildDate>
+    
+	<atom:link href="https://daleicjr.github.io/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>github&#43;域名</title>
+      <link>https://daleicjr.github.io/2017/05/19/</link>
+      <pubDate>Fri, 19 May 2017 21:49:20 +0200</pubDate>
+      
+      <guid>https://daleicjr.github.io/2017/05/19/</guid>
+      <description>## github建立自己的博客 github能够免费给你一个g容量的库 英语大神可以点击这查看：github介绍
+No.1 第一步需要你在GitHub注册自己的账号 点击链接 github注册账号 填写你的信息然后注册登录
+No.2 建立一个库 点击右上角加号 点击第一个new repository 接着就是填写你的库的信息 如图所示 最后的readme打勾 No.3 新建一个文档：creat new file 写一个简单的index.html的文件 可以先去菜鸟教程html复制一个 先观察效果
+No.4 简单调试 点击setting设置 将source改为master branch 之后就会生成一个链接 点击之后就能看到自己做的东西
+No.5 这里简单介绍导入一个网站模板 点击模板下载自己喜欢的模板 最好下载桌面 方便操作 选择upload files 上传文件 将下载的文件直接拖拽上传在这 ： 每一步都要记得点击 commit changes 完成后重新点击链接就能看到导入的模块了
+因为网站的制作需要html css 等语言 所以后期如果想按自己的思路做个网站 可以去学习相关知识
+No.6 导入到自己的域名中 第一步肯定是去注册一个账号
+我自个实在阿里云买的域名 点击阿里云注册自己的账号 也可以直接用自己的淘宝账号登陆
+在这查询你想买的域名有没有被别人买走
+有很多后缀可以选 在这我选的是.online的后缀 很cheap 买好自己的域名之后点击控制台 将自己的github的链接导入到你买的域名中
+No.7 点击你注册的域名 购买域名之后需要实名认证 过程很简单 在这就不介绍 了 唯一的要求就是你的信息是合理合法准确无误的 选择添加纪录 也可以直接选择新手引导 选择A 主机记录：@ 记录值为你的GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>win10 on Mr TengJiao</title>
+    <link>https://daleicjr.github.io/tags/win10/</link>
+    <description>Recent content in win10 on Mr TengJiao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 20 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://daleicjr.github.io/tags/win10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>win10任务栏假死状态处理方法</title>
+      <link>https://daleicjr.github.io/2017/05/20/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/2017/05/20/</guid>
+      <description>win10突然关闭所有程序，任务栏假死状态怎么办？ 论坛里有人建议启动任务管理器 关闭windows反馈错误报告 然而并没有什么卵用
+个人分享一下经验
+用电源键关机开机 之后不要直接输入密码登陆 点击右下角的关机键 选择重启
+这时候电脑一般会重新运行
+如果直接输密码进入 会显示关机之前正在操作的进程
+也就是 依然是假死状态。</description>
+    </item>
+    
+  </channel>
+</rss>

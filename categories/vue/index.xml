@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vue on Mr TengJiao</title>
+    <link>https://daleicjr.github.io/categories/vue/</link>
+    <description>Recent content in vue on Mr TengJiao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 20 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://daleicjr.github.io/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VUE概念解读</title>
+      <link>https://daleicjr.github.io/2017/05/20/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/2017/05/20/</guid>
+      <description> vue概念解读 什么是vue  vue.js是目前最火的一个前端框架，React是最流行的一个前端框架（React除了开发网站，还可以开发手机的app）
+ vue.js是前端的主流框架之一，是angular.js和react.js一起，并成为前端的三个主流框架
+ vue.js是一套构建用户解面的框架，他只关注视图层，不仅容易上手，还便于和第三方库或者既有项目的整合
+ 前端的主要工作？主要负责mvc中v的这一层，主要工作就是和前端的界面打交道。
+为什么要学习流行框架
+===============
+ 企业为了提高开发效率 在企业中 时间就是效率 效率就是金钱。
+ 提高开发效率的发展历程：原生js-&amp;gt;jQ之类的类库-&amp;gt;前端模板的引擎-&amp;gt;angular.js/vue.js
+ 增强自己就业时的竞争力
+ 人无我有 人有我优
+一切为的就是在就业时能够提高自己的竞争力。
+框架和库的区别
+============
+  框架：有一套完整的解决方案，对项目的入侵性比较大，项目如果需要换框架，则需要重新加构整个项目
+ node中的express
+  库（插件）：提供某一个小功能，对项目的入侵行比较小，如果某个库无法完成某些需求，还可以切换到其他的库实现需求
+  </description>
+    </item>
+    
+  </channel>
+</rss>

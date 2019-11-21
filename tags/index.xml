@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Mr TengJiao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 22 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daleicjr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>少年的你-上</title>
+      <link>https://daleicjr.github.io/tags/%E5%B0%91%E5%B9%B4%E7%9A%84%E4%BD%A0-%E4%B8%8A/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/%E5%B0%91%E5%B9%B4%E7%9A%84%E4%BD%A0-%E4%B8%8A/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>hugo</title>
@@ -22,10 +31,19 @@
     
     <item>
       <title>Vm</title>
-      <link>https://daleicjr.github.io/tags/vm/</link>
+      <link>https://daleicjr.github.io/tags/Vm/</link>
       <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://daleicjr.github.io/tags/vm/</guid>
+      <guid>https://daleicjr.github.io/tags/Vm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>https://daleicjr.github.io/tags/vue/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/vue/</guid>
       <description></description>
     </item>
     
@@ -44,6 +62,24 @@
       <pubDate>Fri, 19 May 2017 21:49:20 +0200</pubDate>
       
       <guid>https://daleicjr.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>港</title>
+      <link>https://daleicjr.github.io/tags/%E6%B8%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/%E6%B8%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>港哥</title>
+      <link>https://daleicjr.github.io/tags/%E6%B8%AF%E5%93%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/tags/%E6%B8%AF%E5%93%A5/</guid>
       <description></description>
     </item>
     

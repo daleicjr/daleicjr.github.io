@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Mr TengJiao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 22 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://daleicjr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>观影-感悟</title>
+      <link>https://daleicjr.github.io/categories/%E8%A7%82%E5%BD%B1-%E6%84%9F%E6%82%9F/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/categories/%E8%A7%82%E5%BD%B1-%E6%84%9F%E6%82%9F/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>hugo</title>
@@ -30,11 +39,38 @@
     </item>
     
     <item>
+      <title>vue</title>
+      <link>https://daleicjr.github.io/categories/vue/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/categories/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>github</title>
       <link>https://daleicjr.github.io/categories/github/</link>
       <pubDate>Fri, 19 May 2017 21:49:20 +0200</pubDate>
       
       <guid>https://daleicjr.github.io/categories/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>文章</title>
+      <link>https://daleicjr.github.io/categories/%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/categories/%E6%96%87%E7%AB%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>文章集</title>
+      <link>https://daleicjr.github.io/categories/%E6%96%87%E7%AB%A0%E9%9B%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://daleicjr.github.io/categories/%E6%96%87%E7%AB%A0%E9%9B%86/</guid>
       <description></description>
     </item>
     
